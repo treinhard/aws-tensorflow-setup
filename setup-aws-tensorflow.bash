@@ -16,7 +16,7 @@ wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/c
 sudo dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb
 rm cuda-repo-ubuntu1404_7.5-18_amd64.deb
 sudo apt-get update
-sudo apt-get install -y cuda
+sudo apt-get install -y cuda=7.5-18
 
 # get cudnn
 CUDNN_FILE=cudnn-7.0-linux-x64-v4.0-prod.tgz
