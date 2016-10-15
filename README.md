@@ -6,9 +6,9 @@
 
 - Required linux packages
 - CUDA 7.5
-- cuDNN v4
+- cuDNN v5.1
 - Anaconda with Python 3.5
-- TensorFlow 0.9
+- TensorFlow 0.11.0
 - GPU usage tool `gpustat`
 
 It is based on the blog post: <http://max-likelihood.com/2016/06/18/aws-tensorflow-setup/>.
@@ -20,4 +20,3 @@ Just run `setup_aws_tensorflow.bash` on the aws instance:
 ```bash
 ./setup_aws_tensorflow.bash
 ```
-

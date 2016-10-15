@@ -16,8 +16,8 @@ sudo apt-get update
 sudo apt-get install -y cuda=7.5-18
 
 # get cudnn
-CUDNN_FILE=cudnn-7.0-linux-x64-v4.0-prod.tgz
-wget http://developer.download.nvidia.com/compute/redist/cudnn/v4/${CUDNN_FILE}
+CUDNN_FILE=cudnn-7.5-linux-x64-v5.1.tgz
+wget http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/${CUDNN_FILE}
 tar xvzf ${CUDNN_FILE}
 rm ${CUDNN_FILE}
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include # move library files to /usr/local/cuda
@@ -39,7 +39,7 @@ rm Anaconda3-4.0.0-Linux-x86_64.sh
 echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.bashrc
 
 # install tensorflow
-export TF_BINARY_URL='https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.9.0rc0-cp35-cp35m-linux_x86_64.whl'
+export TF_BINARY_URL='https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl'
 
 sudo /usr/local/anaconda3/bin/pip install $TF_BINARY_URL
 
