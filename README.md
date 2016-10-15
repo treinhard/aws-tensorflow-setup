@@ -1,4 +1,4 @@
-# Setting up TensorFlow 0.9 with Python 3.5 on AWS GPU-instance
+# Setting up TensorFlow 0.11.0 with Python 3.5 on AWS GPU-instance
 
 ## Description
 
